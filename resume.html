@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .top {
+        }
+
+        .topLeft {
+            height: 300px;
+            vertical-align: middle;
+            font-size: 40px;
+            overflow: hidden;
+            background-color: green;
+        }
+
+        .topRight {
+            width: 600px;
+            height: 300px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            float: right;
+            background-color: red;
+        }
+
+        img {
+            position: relative;
+            top: 12.5%;
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .topP {
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+
+        .bottomRight {
+            width: 50%;
+            height: 500px;
+            display: inline-block;
+            overflow: hidden;
+            font-size: 30px;
+            margin-left: -5px;
+
+        }
+
+        .bottomLeft {
+            width: 50%;
+            height: 500px;
+            background-color: red;
+            display: inline-block;
+            overflow: hidden;
+            font-size: 30px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .toolTipsUnder {
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 300px;
+            height: 10px;
+            background-color: pink;
+        }
+
+        .toolTips {
+            position: relative;
+            left: 20px;
+            top: -10px;
+            width: 100px;
+            height: 10px;
+            background-color: green;
+        }
+        .toolTipsCss {
+            width: 100px;
+        }
+
+        .toolTipsC {
+            width: 130px;
+        }
+
+        .toolTipsJava {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="topRight">
+        <img src="../../picture/weige.jpg">
+    </div>
+    <div class="topLeft">
+        <p class="topP">
+            <span>Richard Huang</span><br>
+            <span style="font-size: 30px;margin-left: 20px"><i>JAVA engineer</i></span>
+        </p>
+    </div>
+</div>
+<div style="height: 500px;border-top: 5px solid blue;">
+    <div class="bottomLeft">
+        <div style="margin: 30px 40px 0px 40px">
+            <div style="border: 1px solid blue">
+                <p style="margin: 20px">基本信息</p>
+                <hr>
+                <form style="margin: 20px;">
+                    <table>
+                        <tr>
+                            <td>毕业院校：</td>
+                            <td>华南农业大学</td>
+                        </tr>
+                        <tr>
+                            <td>电话：</td>
+                            <td>8888888888</td>
+                        </tr>
+                        <tr>
+                            <td>邮箱：</td>
+                            <td>8888888888@qq.com</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div style="border: 1px solid blue">
+                <p>自我评价</p>
+                <hr>
+                <p style="font-size: 20px;margin-left: 20px">勤奋上进。</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottomRight" style="overflow: hidden">
+        <div style="margin: 30px 40px 0px 40px">
+            <p style="margin-left: 20px">技能</p>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        <div>css/html</div>
+                    </td>
+                    <td>
+                        <div class="toolTipsUnder"></div>
+                        <div class="toolTipsCss toolTips"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>c/c++</div>
+                    </td>
+                    <td>
+                        <div class="toolTipsUnder"></div>
+                        <div class="toolTipsC toolTips"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>JAVA</div>
+                    </td>
+                    <td>
+                        <div class="toolTipsUnder"></div>
+                        <div class="toolTipsJava toolTips"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="down" style="overflow: hidden">
+    <div style="margin: 30px">
+        <p style="margin-left: 20px">实习经历</p>
+        <hr>
+        <div style="margin-left: 40px">
+            <ul>
+                <li>2019.11.15-2020.5.17 在oocl euc部门实习</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
